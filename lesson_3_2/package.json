@@ -1,0 +1,10 @@
+{
+  "name": "redirector",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "^3.4.0"
+  },
+  "author": "Alejandro Perez Martin",
+  "license": "MIT"
+}
