@@ -14,9 +14,12 @@ app.set('view engine', 'ejs');
 app.use(logger('redirection'));
 
 app.get('/', function(req, res) {
-    res.render('index', {
-        mappings: 'Hello from EJS!'
-    });
+    mappings.list(function (err, documents) {
+        res.render('index', {
+            mappings: documents
+        });
+    })
+
 });
 
 app.get('/:alias', function(req, res) {

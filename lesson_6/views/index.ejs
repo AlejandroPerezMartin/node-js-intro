@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapping redirector</title>
+</head>
+<body>
+    <h1>Mappings</h1>
+    <table>
+        <tr>
+            <td>Alias</td>
+            <td>URL</td>
+        </tr>
+        <% for (var i = 0; i < mappings.length; i++) { %>
+        <tr>
+            <td><a href="/<%= mappings[i].alias %>"><%= mappings[i].alias %></a></td>
+            <td><%= mappings[i].url %></td>
+            <td></td>
+        </tr>
+        <% } %>
+    </table>
+    <%= mappings %>
+</body>
+</html>
